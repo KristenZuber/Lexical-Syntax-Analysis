@@ -1,0 +1,132 @@
+Kristen Z. Student, CSCI4200, Spring 2020, Parser
+********************************************************************************
+Parsing the statement: sumTotal = (sum + 47    ) / total
+Next token is: IDENT
+Enter <assign>
+Next token is: ASSIGN_OP
+Next token is: LEFT_PAREN
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: IDENT
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: ADD_OP
+Exit <factor>
+Exit <term>
+Next token is: INT_LIT
+Enter <term>
+Enter <factor>
+Next token is: RIGHT_PAREN
+Exit <factor>
+Exit <term>
+Exit <expr>
+Next token is: DIV_OP
+Exit <factor>
+Next token is: IDENT
+Enter <factor>
+Exit <factor>
+Exit <term>
+Exit <expr>
+Exit <assign>
+********************************************************************************
+Parsing the statement: Total = (sum + 47    ) /
+Next token is: IDENT
+Enter <assign>
+Next token is: ASSIGN_OP
+Next token is: LEFT_PAREN
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: IDENT
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: ADD_OP
+Exit <factor>
+Exit <term>
+Next token is: INT_LIT
+Enter <term>
+Enter <factor>
+Next token is: RIGHT_PAREN
+Exit <factor>
+Exit <term>
+Exit <expr>
+Next token is: DIV_OP
+Exit <factor>
+Next token is: IDENT
+Enter <factor>
+**ERROR** – expected identifier, integer or left-parenthesis
+Exit <factor>
+Exit <term>
+Exit <expr>
+Exit <assign>
+********************************************************************************
+Parsing the statement: area = (length + width) / 2
+Next token is: IDENT
+Enter <assign>
+Next token is: ASSIGN_OP
+Next token is: LEFT_PAREN
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: IDENT
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: ADD_OP
+Exit <factor>
+Exit <term>
+Next token is: IDENT
+Enter <term>
+Enter <factor>
+Next token is: DIV_OP
+Exit <factor>
+Exit <term>
+Exit <expr>
+Exit <factor>
+Next token is: IDENT
+Enter <factor>
+**ERROR** – expected identifier, integer or left-parenthesis
+Exit <factor>
+Exit <term>
+Exit <expr>
+Exit <assign>
+********************************************************************************
+Parsing the statement: ageNumbers = age + 3 - 5 * (D / C)
+Next token is: IDENT
+Enter <assign>
+Next token is: ASSIGN_OP
+Next token is: IDENT
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: ADD_OP
+Exit <factor>
+Exit <term>
+Next token is: INT_LIT
+Enter <term>
+Enter <factor>
+Next token is: SUB_OP
+Exit <factor>
+Exit <term>
+Next token is: INT_LIT
+Enter <term>
+Enter <factor>
+Next token is: MULT_OP
+Exit <factor>
+Next token is: IDENT
+Enter <factor>
+Next token is: DIV_OP
+Exit <factor>
+Next token is: IDENT
+Enter <factor>
+Next token is: RIGHT_PAREN
+Exit <factor>
+Exit <term>
+Exit <expr>
+Exit <assign>
+********************************************************************************
+END_OF_FILE
+Syntax analysis of the program is complete!
